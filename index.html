@@ -43,23 +43,22 @@
         <header>
             <!-- Fixed navbar -->
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark blazor-navbar">
-              <a class="navbar-brand" href="#">LOGO</a>
+              <div class="navbar-brand" href="index.html#">
+                <img class="blazor-logo" src="img/blazorLogo.png" alt="Blazor for all">
+              </div>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html#">Evento<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://latinonet.online/">Latino NET Online</a>
+                    <a class="nav-link" href="index.html#agenda">Agenda</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://www.meetup.com/dotnetdom/">.NET Dominicana</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://net-university.ninja/">NET University</a>
+                    <a class="nav-link" href="index.html#organizers">Organizadores</a>
                   </li>
                 </ul>
               </div>
@@ -69,13 +68,15 @@
           <!-- Begin page content -->
           <main role="main" class="container">
 
-            <section class="row">
+            <section id="info" class="row">
                 <div class="col-sm-12 col-md-12">
                     <h1 class="mt-5 text-center font-weight-bold">BLAZOR FOR ALL</h1>
                     <br />
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac turpis sagittis, placerat sapien vitae, euismod leo. Nulla rutrum mollis congue. Proin et risus a est imperdiet sollicitudin in et felis. Pellentesque eget nisi vitae mauris posuere aliquam a eget turpis. Praesent justo felis, sodales nec purus id, placerat mattis leo. In hac habitasse platea dictumst. Vivamus magna lectus, efficitur vitae odio a, viverra lacinia dolor. Morbi quis neque et risus posuere convallis nec eget sem. Fusce vitae nisi nec tellus mollis vestibulum. Quisque vel congue nunc.</p>
+                    <p class="text-justify">#blazorforall es el primer evento en latino america enfocado en blazor que busca resaltar las bondades y capacidades que tiene esta técnologia para ofrecer a los desarrolladores C#</p>
                     <br />
-                    <p class="text-justify">Mauris id iaculis nibh, et laoreet sem. Curabitur leo odio, blandit at sem a, ullamcorper facilisis orci. Praesent bibendum accumsan placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                    <p class="text-justify">El evento será transmitido de manera online para toda latino america y el mundo por diferentes canales de las comunidades organizadoras (YouTube, Twitch, Facebook, etc...)</p>
+                    <br />
+                    <p class="text-justify">Inscribité y guardalo en tu calendario: </p>
                 </div>
             </section>
             
@@ -90,7 +91,7 @@
             <br />
 
             <section class="row">
-                <div class="col-sm-12 col-md-12">
+                <div id="agenda" class="col-sm-12 col-md-12">
                     <h2 class="text-agenda font-weight-bold text-center">AGENDA</h2>
                     <br />
                     <table class="table">
@@ -137,10 +138,8 @@
                       </table>
 
                 </div>
-
-
-
-                <div class="col-sm-12 offset-md-3 col-md-6">
+                <br />
+                <div id="multimedia" class="col-sm-12 offset-md-3 col-md-6">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Carousel indicators -->
                         <ol class="carousel-indicators">
@@ -169,6 +168,21 @@
                         </a>
                     </div>
                 </div>
+               
+            </section>
+            <br />
+            <br />
+            <br />
+            <section class="row">
+              <div id="organizers" class="col-sm-12 col-md-12">
+                <h2 class="text-agenda font-weight-bold text-center">ORGANIZADORES</h2>
+                <br />
+                <div class="logo-container offset-md-2">
+                  <a href="https://latinonet.online/" target="_blank"><img class="organizer-logo" src="img/latinonetlogo.png" alt="Latino net"></a>
+                  <a href="https://www.meetup.com/dotnetdom/" target="_blank"><img class="organizer-logo" src="img/dotnetdominicana.jpg" alt="dotnet dominicana"></a>
+                  <a href="https://avanet.org/" target="_blank"><img class="organizer-logo" src="img/avanetlogo.png" alt="Latino net"></a>
+                </div>
+              </div>
             </section>
             
           </main>

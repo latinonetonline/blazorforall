@@ -70,3 +70,25 @@ body {
   .footer a {
       color: #fff;
   }
+
+.blazor-logo
+{
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.organizer-logo
+{
+    max-height: 150px;
+    max-width: 210px;
+    margin-left:80px;
+    position: relative;
+}
+
+.logo-container {
+  width: 100%;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+}
