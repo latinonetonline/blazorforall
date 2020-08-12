@@ -77,14 +77,6 @@ body {
     max-width: 35px;
 }
 
-.organizer-logo
-{
-    max-height: 150px;
-    max-width: 210px;
-    margin-left:80px;
-    position: relative;
-}
-
 .logo-container {
   width: 100%;
   flex-direction: row;
@@ -92,3 +84,22 @@ body {
   justify-content: center;
   justify-self: center;
 }
+
+.organizer-logo
+{
+    max-height: 150px;
+    max-width: 210px;
+    margin-left:80px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.sponsor-logo
+{
+    max-height: 150px;
+    max-width: 210px;
+    margin-left:80px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
