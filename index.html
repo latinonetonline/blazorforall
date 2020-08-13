@@ -3,39 +3,42 @@
 
     <head>
 
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
 
-        <title>Blazor For All</title>
-        <meta name="description" content="">
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/landing-page.css">
+      <title>Blazor For All</title>
+      <meta name="description" content="">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/landing-page.css"> 
 
-        <!-- favicon.ico. Place these in the root directory. -->
-        <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+      <!-- favicon.ico. Place these in the root directory. -->
+      <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+      
+      
+      
+
+      <!-- load jQuery 3.2.1 -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+      <!-- load jQuery 1.11.0 -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+        jQuery.noConflict();
+
+        jQuery(document).ready(function($) {
+          $('.parallax-window').parallax({imageSrc: 'https://pixelcog.github.io/parallax.js/img/helix-nebula-1400x1400.jpg'});
+        });
         
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script>
-            $(function(){
-            if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-                $('#ios-notice').removeClass('hidden');
-                $('.parallax-container').height( $(window).height() * 0.5 | 0 );
-            } else {
-                $(window).resize(function(){
-                var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
-                $('.parallax-container').height(parallaxHeight);
-                }).trigger('resize');
-            }
-            });
-        </script>
-        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+      </script>
+      <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     </head>
 
     <body class="has-animations">
@@ -69,10 +72,10 @@
           </header>
       
           <!-- Begin page content -->
-          <main role="main" class="container">
+          <main role="main" class="container-fluid">
 
             <section id="info" class="row">
-                <div class="col-sm-12 col-md-12">
+                <div class="col-sm-12 offset-md-2 col-md-8">
                     <h1 class="mt-5 text-center font-weight-bold">BLAZOR FOR ALL</h1>
                     <br />
                     <p class="text-justify">#blazorforall es el primer evento en latino america enfocado en blazor que busca resaltar las bondades y capacidades que tiene esta técnologia para ofrecer a los desarrolladores C#.</p>
@@ -86,15 +89,19 @@
             <br />
             <br />
             <br />
-<!-- 
-            <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="img/helix-nebula-1400x1400.jpg" data-natural-width="1400" data-natural-height="1400" style="height: 662px;"></div> -->
 
+            <section class="row parallax-row">
+              <div class="col-sm-12 col-md-12">
+                <div class="parallax-window" data-parallax="scroll" data-z-index="100"></div>
+              </div>
+            </section>
+            
             <br />
             <br />
             <br />
 
             <section class="row">
-                <div id="agenda" class="col-sm-12 col-md-12">
+                <div id="agenda" class="col-sm-12 offset-md-2 col-md-8">
                     <h2 class="text-agenda font-weight-bold text-center">AGENDA</h2>
                     <br />
                     <table class="table">
@@ -142,25 +149,29 @@
 
                 </div>
                 <br />
-                <div id="multimedia" class="col-sm-12 offset-md-3 col-md-6">
+                <div id="multimedia" class="col-sm-12 col-md-5">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Carousel indicators -->
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
                         </ol>
                         <!-- Wrapper for carousel items -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="img/Slide01.png" alt="First Slide">
+                                <img src="img/Flyer_Chris.jpeg" alt="First Slide">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Slide02.png" alt="Second Slide">
+                                <img src="img/Flyer_Girl.jpg" alt="Second Slide">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Slide03.png" alt="Third Slide">
+                                <img src="img/Flyer_Chris.jpeg" alt="Third Slide">
                             </div>
+                            <div class="carousel-item">
+                              <img src="img/Flyer_Girl_02.jpg" alt="Third Slide">
+                          </div>
                         </div>
                         <!-- Carousel controls -->
                         <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
@@ -171,13 +182,12 @@
                         </a>
                     </div>
                 </div>
-               
             </section>
             <br />
             <br />
             <br />
             <section class="row">
-              <div id="organizers" class="container col-sm-12 col-md-12">
+              <div id="organizers" class="container col-sm-12 offset-md-2 col-md-8">
                 <h2 class="text-agenda font-weight-bold text-center">ORGANIZADORES</h2>
                 <br />
                 <div class="logo-container offset-md-2">
@@ -196,7 +206,7 @@
             <br />
             <br />
             <section class="row">
-              <div id="sponsors" class="container col-sm-12 col-md-12">
+              <div id="sponsors" class="container col-sm-12 offset-md-2 col-md-8">
                 <h2 class="text-agenda font-weight-bold text-center">PATROCINADORES</h2>
                 <br />
                 <div class="logo-container offset-md-2">
