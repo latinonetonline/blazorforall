@@ -185,10 +185,10 @@ h3.subtitle{
     position: relative;
 }
 
-.sponsor-logo
+.sponsor-logo-img
 {
-    max-height: 150px;
-    max-width: 210px;
+    max-height: 200px;
+    max-width: 310px;
     margin-left:80px;
     margin-bottom: 50px;
     position: relative;
