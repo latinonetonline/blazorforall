@@ -74,7 +74,7 @@ h3.subtitle{
 }
 
 .img-blazor-promo {
-  width: 100%;
+  max-width: 85%;
 }
 
 .parallax-window {
@@ -196,7 +196,7 @@ h3.subtitle{
 {
     max-height: 200px;
     max-width: 310px;
-    margin-left:80px;
+    margin-right:45px;
     margin-bottom: 50px;
     position: relative;
 }
