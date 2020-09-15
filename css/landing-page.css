@@ -382,3 +382,8 @@ hr {
 .v-card .card-content span.card-title {
   line-height: 48px;
 }
+
+.separator
+{
+  margin-top: 12%;
+}
